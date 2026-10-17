@@ -17,14 +17,14 @@ This repository is public. Publish only material that is safe and permitted to r
 - Copy `templates/skill-template/SKILL.md` for new skills; complete all replacement guidance before publishing. Keep the template outside skill discovery paths.
 - Use unique lowercase kebab-case names of 1-64 characters, matching the directory; no leading, trailing, or consecutive hyphens.
 - Require YAML `name` and a nonempty `description` of at most 1024 characters explaining capability and activation. Use supported Agent Skills fields only; put repository classifications in string-valued `metadata`.
-- Set `metadata.category` to a category from `docs/CATALOG.md` and `metadata.source` to `original` or the original public source URL. Original content uses MIT; bundle a copy of the root `LICENSE` with original skills. Imported material retains its upstream terms. Record licensing and attribution as described in `docs/CONTRIBUTING.md`; never invent a license grant.
+- Set `metadata.category` to a descriptive category string and `metadata.source` to `original` or the original public source URL. Original content uses MIT; bundle a copy of the root `LICENSE` with original skills. Imported material retains its upstream terms. Record the upstream revision, modifications, licensing, and attribution in the skill folder; never invent a license grant.
 - Write concise, actionable workflows with inputs, outputs, quality checks, and relevant authorization boundaries. Preserve the user's scope and existing work. Skills do not grant credentials or action permissions.
 - Keep skills self-contained and portable. Link supporting resources relative to the skill directory. Add `references/`, `scripts/`, or `assets/` only for actual needs; document dependencies and test executable helpers.
-- Update `docs/CATALOG.md` when adding, renaming, removing, or changing a skill's purpose or compatibility. Keep paths and provenance consistent with frontmatter.
+- Keep skill paths and provenance consistent with frontmatter. Catalog updates are not required; `docs/` remains ignored.
 
 ## Validation and delivery
 
-- Follow `docs/CONTRIBUTING.md` for frontmatter, link, discovery, privacy, and behavioral checks. Validate both the example and template after changing the standard; distinguish intentional template prompts from unfinished published skills.
+- Parse YAML frontmatter and check required types, lengths, naming, and string-valued metadata. Check relative links against files included in the contribution, discovery locations, privacy, and realistic activating/non-activating requests. Validate both the example and template after changing the standard; distinguish intentional template prompts from unfinished published skills. Report static review separately from live runtime testing.
 - Confirm installation claims against current official documentation. Label untested runtime behavior and unverified agent integrations explicitly.
 - Preserve existing ignore rules, line-ending rules, attribution, and public-distribution safeguards. Review every supporting file as carefully as `SKILL.md`.
 - Use a focused branch off the intended base, stage explicit file paths, review the full staged diff and all outgoing commits, and create one focused PR. Do not introduce installers, CI, bulk imports, or extra examples without a separate request.
