@@ -18,11 +18,15 @@ No skills yet.
 
 ## ai-agent-operations
 
-No skills yet.
+| Name | Description | Category | Source / provenance | Compatibility |
+| --- | --- | --- | --- | --- |
+| [caveman](../.agents/skills/caveman/SKILL.md) | Terse chat voice that removes filler while preserving technical facts. | `ai-agent-operations` | Julius Brussee, [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman); Apache-2.0 with upstream notices. [Pinned source and changes](../.agents/skills/caveman/PROVENANCE.md). | Core instruction-only skill; persists until stopped. No hooks, extra modes, proxy, or token-savings guarantee. Live agent behavior untested. |
 
 ## documentation-analysis
 
-No skills yet.
+| Name | Description | Category | Source / provenance | Compatibility |
+| --- | --- | --- | --- | --- |
+| [unslop](../.agents/skills/unslop/SKILL.md) | Edit prose to remove AI writing patterns while preserving meaning and tone. | `documentation-analysis` | Lauren Tan (poteto), [pstack in cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/unslop); MIT. [Pinned source and changes](../.agents/skills/unslop/PROVENANCE.md). | Explicit invocation preserved in Codex policy and portable body guidance. No pstack plugin or scripts required. Other harness policy enforcement and live agent behavior untested. |
 
 ## project-workflow-management
 
