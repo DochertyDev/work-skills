@@ -1,0 +1,50 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+.aws/
+.azure/
+.ssh/
+.config/
+.npmrc
+.pypirc
+.netrc
+credentials.json
+credentials.*.json
+secrets.json
+secrets.*
+*.local
+
+# Local agent state and editor settings
+.codex/
+.claude/
+.idea/
+.vscode/
+
+# Dependencies, caches, and generated output
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+dist/
+build/
+coverage/
+*.log
+*.tmp
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
