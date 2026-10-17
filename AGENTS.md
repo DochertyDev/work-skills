@@ -7,7 +7,9 @@ This repository is public. Publish only material that is safe and permitted to r
 - For third-party skills, verify redistribution rights, record the original source and license, and preserve required attribution and notices. Do not assume a public page is freely licensed.
 - Before committing, inspect `git status` and `git diff --cached`, check for sensitive content, and stage files explicitly by name.
 - Before pushing, review all outgoing commits. Ignore rules are not a secret scanner.
-- After initial setup, make changes on a focused branch and use a pull request. Leave pull requests unmerged unless the user authorizes merging.
+- After initial setup, make changes on a focused branch and use a pull request. Every PR in this repository must target `main`; never target another feature or foundation branch. Leave pull requests unmerged unless the user authorizes merging.
+- Start independent work from current `origin/main`. If work depends on an unmerged PR, still target `main`, explain the dependency, and keep the dependent PR in draft until its prerequisite is merged and its diff is reviewed against updated `main`.
+- Set the PR base explicitly (for GitHub CLI, `gh pr create --base main`) and verify GitHub reports `baseRefName: main` after creation and before delivery. Recheck the base before any authorized merge. Correct a wrong target before reporting the PR ready.
 
 ## Skill conventions
 

@@ -38,7 +38,7 @@ Codex can discover skills in this repository. To use a skill in another project,
 
 ## Add a skill
 
-Copy [the template](templates/skill-template/SKILL.md) into `.agents/skills/<skill-name>/SKILL.md`, complete it, validate it, and update the catalog. Follow the [contribution guide](docs/CONTRIBUTING.md) and [agent instructions](AGENTS.md); submit one focused pull request and leave it unmerged.
+Copy [the template](templates/skill-template/SKILL.md) into `.agents/skills/<skill-name>/SKILL.md`, complete it, validate it, and update the catalog. Follow the [contribution guide](docs/CONTRIBUTING.md) and [agent instructions](AGENTS.md); submit one focused pull request targeting `main` and leave it unmerged.
 
 The foundation intentionally has no installer, synchronization scripts, or CI framework. Skills use portable Markdown and Agent Skills frontmatter; agent-specific behavior still needs testing.
 
