@@ -6,7 +6,7 @@ Canonical skills live directly in `.agents/skills/`. Categories classify them wi
 
 | Name | Description | Category | Source / provenance | Compatibility |
 | --- | --- | --- | --- | --- |
-| [github-issue-to-pr](../.agents/skills/github-issue-to-pr/SKILL.md) | Implement an existing GitHub issue and deliver a validated, reviewable PR. | `software-development` | Original work authored in this repository; no third-party skill copied. No license grant specified. | Portable instructions; requires Git, project tooling, and authenticated GitHub access. Codex / Claude Code installation locations verified; runtime execution not yet tested. Hermes / Muse unverified. |
+| [github-issue-to-pr](../.agents/skills/github-issue-to-pr/SKILL.md) | Implement an existing GitHub issue and deliver a validated, reviewable PR. | `software-development` | Original work authored in this repository; no third-party skill copied. MIT; license notice bundled in the skill folder. | Portable instructions; requires Git, project tooling, and authenticated GitHub access. Codex / Claude Code installation locations verified; runtime execution not yet tested. Hermes / Muse unverified. |
 
 ## salesforce-certinia
 

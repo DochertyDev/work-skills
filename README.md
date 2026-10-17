@@ -8,7 +8,9 @@ Start with the [skill catalog](docs/CATALOG.md). The first skill, [github-issue-
 
 ```text
 work-skills/
-|-- .agents/skills/github-issue-to-pr/SKILL.md
+|-- .agents/skills/github-issue-to-pr/
+|   |-- SKILL.md
+|   `-- LICENSE
 |-- docs/
 |   |-- CATALOG.md
 |   |-- CONTRIBUTING.md
@@ -16,6 +18,7 @@ work-skills/
 |-- templates/skill-template/SKILL.md
 |-- AGENTS.md
 |-- README.md
+|-- LICENSE
 |-- .gitignore
 `-- .gitattributes
 ```
@@ -49,4 +52,4 @@ Everything committed here, including commit history, must be suitable for public
 - Before adding third-party material, verify that redistribution is permitted, record its source and license, and preserve required notices. Public availability alone does not grant permission to copy.
 - Review the exact staged diff before every commit and the outgoing commits before every push. Ignore rules help prevent accidents; they do not detect secrets or remove already tracked files.
 
-No repository-wide license has been selected. Public visibility does not grant a general redistribution license. Check each skill's provenance and any license or permission record before reuse or redistribution; obtain permission where no grant exists. See [source requirements](docs/CONTRIBUTING.md#external-sources-and-licensing).
+Original repository content is licensed under the [MIT License](LICENSE). Preserve its copyright and license notice when copying it; original skills include a local license copy so the notice travels with them. Third-party skills and supporting files retain their own licenses and notices, which take precedence for that material; the root MIT license does not relicense imports. See [source requirements](docs/CONTRIBUTING.md#external-sources-and-licensing).

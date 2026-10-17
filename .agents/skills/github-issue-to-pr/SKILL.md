@@ -1,6 +1,7 @@
 ---
 name: github-issue-to-pr
 description: Take an existing GitHub issue through scoped implementation, validation, and creation of a reviewable pull request. Use when the user asks to implement or fix a specific issue and deliver a PR.
+license: MIT
 metadata:
   category: software-development
   source: original

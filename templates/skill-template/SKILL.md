@@ -1,6 +1,7 @@
 ---
 name: skill-template
 description: "Replace with a concise capability and the specific user requests that should activate this skill."
+license: MIT
 metadata:
   category: software-development
   source: original
@@ -8,7 +9,7 @@ metadata:
 
 # Skill title
 
-Authoring template only: copy this file into `.agents/skills/your-skill-name/SKILL.md`, match `name` to the new directory, and replace every instruction to the author before publishing. Select a catalog category and record actual provenance; `original` applies only to work authored here.
+Authoring template only: copy this file into `.agents/skills/your-skill-name/SKILL.md`, match `name` to the new directory, and replace every instruction to the author before publishing. Select a catalog category and record actual provenance; `original` applies only to work authored here. For original work, retain `license: MIT` and copy the repository root `LICENSE` into the completed skill folder. For imported work, use the actual upstream license and required notices instead.
 
 ## Purpose and scope
 
