@@ -10,7 +10,14 @@ Canonical skills live directly in `.agents/skills/`. Categories classify them wi
 
 ## salesforce-certinia
 
-No skills yet.
+| Name | Description | Category | Source / provenance | Compatibility |
+| --- | --- | --- | --- | --- |
+| [salesforce-flow-design](../.agents/skills/salesforce-flow-design/SKILL.md) | Design/review Flow type, bulk safety, recursion, fault paths, and transaction boundaries. | `salesforce-certinia` | Adapted from github/awesome-copilot; MIT. [Pinned source and changes](../.agents/skills/salesforce-flow-design/PROVENANCE.md). | Local requirements/XML review; no CLI or org required. Offline walkthrough only; live harness and org testing unverified. |
+| [salesforce-apex-quality](../.agents/skills/salesforce-apex-quality/SKILL.md) | Review/author Apex for bulk safety, access controls, injection, and meaningful tests. | `salesforce-certinia` | Adapted from github/awesome-copilot; MIT. [Pinned source and changes](../.agents/skills/salesforce-apex-quality/PROVENANCE.md). | Local source review; version-aware access checks. No bundled analyzer. Compilation, live harness, and org testing unverified. |
+| [sf-diagram](../.agents/skills/sf-diagram/SKILL.md) | Produce Salesforce Mermaid/ASCII diagrams grounded in metadata, Apex, or Flow XML. | `salesforce-certinia` | Adapted from Clientell-Ai/salesforce-skills; Apache-2.0. [Pinned source and changes](../.agents/skills/sf-diagram/PROVENANCE.md). | Local files sufficient; preview renderer optional. Diagram rendering and live harness behavior unverified. |
+| [platform-apex-logs-debug](../.agents/skills/platform-apex-logs-debug/SKILL.md) | Diagnose Apex exceptions, governor limits, and performance from supplied logs. | `salesforce-certinia` | Adapted from forcedotcom/sf-skills; Apache-2.0. [Pinned source and changes](../.agents/skills/platform-apex-logs-debug/PROVENANCE.md). | Supplied logs sufficient; no CLI/plugin required. Offline walkthrough only; live harness and org testing unverified. |
+
+See the [11-candidate intake review](reviews/salesforce-skill-intake.md) for selection, exclusions, and validation limits. Each folder carries its upstream license and provenance.
 
 ## integrations-data
 
