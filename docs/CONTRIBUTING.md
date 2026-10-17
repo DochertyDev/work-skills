@@ -1,16 +1,30 @@
 # Contributing skills
 
-Read [AGENTS.md](../AGENTS.md) before editing. Keep one focused contribution per branch and PR; leave PRs unmerged unless authorized.
+Read [AGENTS.md](../AGENTS.md) before editing. Keep one focused contribution per branch and PR. Every PR must target `main`; leave PRs unmerged unless authorized.
 
 ## Add or update a skill
 
-1. Check the [catalog](CATALOG.md) for overlap and inspect the working tree. Create a dedicated branch from the intended current base without disturbing existing work.
+1. Check the [catalog](CATALOG.md) for overlap and inspect the working tree. Fetch current refs and create a dedicated branch from `origin/main` without disturbing existing work. For dependent work, follow the PR targeting rules below.
 2. Copy [the template](../templates/skill-template/SKILL.md) into `.agents/skills/<skill-name>/SKILL.md`. Use a unique lowercase kebab-case name matching the directory. Keep all skills immediately under `.agents/skills/`.
 3. Replace the template's authoring prompts. Write `description` around what the skill does and the concrete requests that should activate it. For example, an issue-to-PR request should activate `github-issue-to-pr`; a request only to explain an issue should not. Keep the procedure concise, actionable, and focused on decisions an agent needs help making.
 4. Choose one category from the catalog. Set string-valued `metadata.category` and `metadata.source` (`original` for work authored here; original public URL for sourced material). These are repository conventions within standard `metadata`, not new top-level fields. Record upstream revision and modifications for imported material, using metadata or a bundled provenance note when useful.
 5. Add supporting files only when necessary: `references/` for conditional detail, `scripts/` for executable helpers, `assets/` for output resources. Link them relative to the skill root, document dependencies, and test helpers. Keep the skill usable when copied as a whole folder; do not rely on files elsewhere in this repository or local agent configuration.
 6. Run the checks below, update the catalog entry, and review the complete diff for scope and public suitability.
-7. Inspect `git status`, stage explicit paths, and inspect `git diff --cached` before committing. Review every outgoing commit before pushing. Open a PR with purpose, activation examples, validation results, provenance, and compatibility limitations.
+7. Inspect `git status`, stage explicit paths, and inspect `git diff --cached` before committing. Review every outgoing commit before pushing. Open a PR explicitly targeting `main`, with purpose, activation examples, validation results, provenance, and compatibility limitations. Verify the base on GitHub before handing it over.
+
+## PR targeting rules
+
+All PRs target `main`, including work that depends on another open PR. Do not use another feature or foundation branch as a PR base.
+
+For dependent work, explain the prerequisite in the description and keep the PR in draft. Once the prerequisite merges, update the working branch from current `main` using a method that preserves existing work, review the resulting diff, and rerun relevant validation before marking it ready. Do not merge prerequisites or rewrite published history without authorization.
+
+With GitHub CLI, supply `--base main` when creating a PR and verify its stored target afterward:
+
+```sh
+gh pr view PR_NUMBER --json baseRefName
+```
+
+Replace `PR_NUMBER` with the created PR number. The result must report `main`. Check again before an authorized merge; if the target is wrong, correct it and review the updated diff before proceeding.
 
 ## Format and quality checks
 
