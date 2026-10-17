@@ -2,15 +2,16 @@
 
 A public library of reusable AI agent skills, authored here or collected from sources that permit redistribution. Keep a canonical copy, discover useful workflows, and reuse individual skills across projects and computers.
 
-Start with the [skill catalog](docs/CATALOG.md). The first skill, [github-issue-to-pr](.agents/skills/github-issue-to-pr/SKILL.md), guides an agent from an existing GitHub issue to a tested, reviewable pull request.
+Start with the [skill catalog](docs/CATALOG.md). The included workflow example, [github-issue-to-pr](.agents/skills/github-issue-to-pr/SKILL.md), guides an agent from an existing GitHub issue to a tested, reviewable pull request. Imported skills include [Unslop](.agents/skills/unslop/SKILL.md) for prose editing and [Caveman](.agents/skills/caveman/SKILL.md) for terse chat replies; each retains its upstream license and provenance.
 
 ## Repository layout
 
 ```text
 work-skills/
-|-- .agents/skills/github-issue-to-pr/
-|   |-- SKILL.md
-|   `-- LICENSE
+|-- .agents/skills/
+|   |-- caveman/            # SKILL.md, provenance, upstream licenses/notices
+|   |-- github-issue-to-pr/ # SKILL.md, LICENSE
+|   `-- unslop/             # SKILL.md, provenance, LICENSE, agents/openai.yaml
 |-- docs/
 |   |-- CATALOG.md
 |   |-- CONTRIBUTING.md

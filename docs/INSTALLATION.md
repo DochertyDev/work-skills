@@ -48,3 +48,12 @@ After updating the canonical clone, compare the full installed folder with the n
 Copy only completed skill directories, including their supporting files and required notices. Do not copy `templates/skill-template/`, repository `AGENTS.md`, or private local configuration into skill locations.
 
 Automated installation, synchronization, plugins, and Hermes / Muse adapters are future enhancements outside this foundation.
+
+## Imported writing skills
+
+Copy each entire skill folder so its provenance, licenses, notices, and invocation policy travel with it.
+
+- **Unslop:** explicitly request `$unslop` in Codex or `/unslop` in Claude Code with the text to edit. The Codex policy preserves upstream explicit invocation. On other hosts, the body instruction requests explicit use, but harness-level enforcement has not been verified.
+- **Caveman:** request `$caveman` in Codex or `/caveman` in Claude Code. It applies a terse voice to chat replies until `stop caveman` or `normal mode`. The standalone import excludes hooks, proxies, extra modes, and companion commands; status uses the upstream fallback when the host does not track modes. No token-savings percentage is promised.
+
+Unslop edits prose into full, readable sentences; Caveman compresses chat replies and keeps persisted documents in plain prose. Apply the style requested for the current output rather than mechanically combining opposing editing rules. These are usage instructions, not live runtime certification; trials remain deferred.
