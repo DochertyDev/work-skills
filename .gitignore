@@ -48,3 +48,6 @@ coverage/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Other files to ignore
+docs/
